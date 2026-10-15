@@ -17,7 +17,7 @@ const App = () => {
   };
   
   return (
-    <div className="py-10 px-20">
+    <div className="py-6 px-4 sm:py-10 sm:px-20">
       <div>
         {/**Title is Here */}
         <h1 className="font-semibold text-3xl">Flash Card</h1>
@@ -43,13 +43,13 @@ const App = () => {
 
       <div className="flex flex-col items-center justify-center">
         {/**Card is Here */}
-        <div className="flex flex-col items-center justify-center pb-10 gap-3 p-5 border border-gray-300 rounded-2xl bg-white shadow-inner w-125">
+        <div className="flex flex-col items-center justify-center pb-10 gap-3 p-5 border border-gray-300 rounded-2xl bg-white shadow-inner w-full max-w-125">
           <div>
-            <h1 className="text-3xl font-semibold text-gray-800 space-x-1 ">
+            <h1 className="text-xl sm:text-3xl font-semibold text-gray-800 space-x-1 text-center break-words">
               {content}
             </h1>
           </div>
-          <div className="flex items-around justify-center gap-3 w-full pt-10">
+          <div className="flex flex-wrap items-around justify-center gap-3 w-full pt-10">
             <button className="bg-black text-white px-4 py-2 rounded-full cursor-pointer active:animate-ping">
               Previous
             </button>
